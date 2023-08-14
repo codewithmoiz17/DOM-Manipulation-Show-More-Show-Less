@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Use Google Fonts for a modern and attractive font */
+    background-color: #f8f8f8; 
+}
+
+/* Main Content Container */
+.main-content {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Main Headings */
+#main-heading,
+#real-main-heading {
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #4285f4; /* Google's Material Blue */
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hidden Content */
+.hidden-content {
+    display: none;
+    margin: 20px auto;
+    padding: 20px;
+    color: #4285f4;
+    border: 1px solid #4285f4;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+/* Reveal Button */
+.reveal-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px auto;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reveal-btn:hover {
+    background-color: #3367d6; /* Darker shade on hover */
+}
+
+/* Display hidden content on button click */
+.hidden-content.reveal-btn {
+    display: block;
+}
